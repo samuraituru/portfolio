@@ -121,8 +121,9 @@
       }
 
       .screenshot-picture {
-        width: calc(100%/4);
         display: flex;
+        height: 256px;
+        width: 100%;
         gap: 16px 16px;
       }
 
@@ -177,42 +178,29 @@
     <section>
         <h2 id="pictures"><a href="#pictures">Pictures</a></h2>
         <p class="screenshot-picture">
-            <picture>
-                  <source type="image/webp" srcset="./assets/images/grats/startup_image.png" />
-                  <source type="image/png" srcset="./assets/images/grats/startup_image.png" />
                   <img
                     src="./assets/images/grats/startup_image.png"
                     alt="startup_image"
                     decoding="async"
                   />
-                </picture>
-            <picture>
-                  <source type="image/webp" srcset="./assets/images/grats/recode_image.png" />
-                  <source type="image/png" srcset="./assets/images/grats/recode_image.png" />
                   <img
                     src="./assets/images/grats/recode_image.png"
                     alt="recode_image"
                     decoding="async"
                   />
-                </picture>
-            <picture>
-                  <source type="image/webp" srcset="./assets/images/grats/group_image.png" />
-                  <source type="image/png" srcset="./assets/images/grats/group_image.png" />
+                
                   <img
                     src="./assets/images/grats/group_image.png"
                     alt="group_image"
                     decoding="async"
                   />
-                </picture>
-            <picture>
-                  <source type="image/webp" srcset="./assets/images/grats/movie_image.png" />
-                  <source type="image/png" srcset="./assets/images/grats/movie_image.png" />
+            
                   <img
                     src="./assets/images/grats/movie_image.png"
                     alt="movie_image"
                     decoding="async"
                   />
-                </picture>
+              
         </p>
     </section>
     <section>
