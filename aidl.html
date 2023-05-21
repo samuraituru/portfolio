@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        /* https://goodpalette.io/ff6600-1123bf-c9c5c1 */
+        --background-base: #f0eeec;
+        --background-card: #fcfcfa;
+        --background-footer: #5c1500;
+        --background-header: #262322;
+        --background-image: #fcfcfa;
+        --border-color: #e3e1dd;
+        --card-radius-px: 8px;
+        --header-color: #5c1500;
+        --link-color-base: #5c1500;
+        --link-color-on-footer: #ffe0b6;
+        --text-color-base: #260600;
+        --text-color-accent: #ffbe79;
+        --text-color-on-footer: #fffaf2;
+        --text-color-on-header: #fffaf2;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 *,
+      h2 *,
+      h3 * {
+        color: inherit;
+      }
+
+      h1 {
+        color: var(--text-color-on-header);
+        font-size: 30px;
+        line-height: 48px;
+      }
+
+      h2 {
+        color: var(--header-color);
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        color: var(--header-color);
+        font-size: 20px;
+        line-height: 48px;
+      }
+
+      h2 > a,
+      h3 > a {
+        color: inherit;
+      }
+
+      p {
+        padding: 0;
+        margin: 8px;
+        line-height: 1.3;
+      }
+
+      a {
+        color: var(--link-color-base);
+      }
+
+      img {
+        background-color: var(--background-image);
+      }
+      section {
+        margin: 32px auto;
+        max-width: 48rem;
+        padding: 0 16px;
+      }
+
+      .card-layout {
+        margin: 0 auto;
+                    align-items: stretch;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+      }
+
+      .card-layout > .card {
+        background-color: var(--background-card);
+        display: block;
+        flex: 1 1 0;
+        margin: 8px 8px 24px 8px;
+        max-width: calc(100% - 16px);
+      }
+
+      .about-card {
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+        text-align: center;
+      }
+      .card-text {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .about-card img {
+        border-bottom: 1px solid var(--border-color);
+        display: inline-block;
+        height: 238px;
+        max-width: 238px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .about-card > p {
+        margin: 0 16px 16px 16px;
+        text-align: left;
+      }
+
+      .screenshot-picture {
+        display: flex;
+        height: 384px;
+        width: calc(100%/3);
+        text-align: center;
+        gap: 16px 16px;
+      }
+
+      .skill-card {
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        padding: 16px;
+      }
+
+      .skill-links-layout {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .skill-links-layout img {
+        border-radius: 4px;
+        height: 256px;
+        margin: 4px;
+        object-fit: contain;
+        border: 1px solid var(--border-color);
+        width: 256px;
+      }
+      .feature-card {
+        background-color: var(--background-card);
+        border: 1px solid var(--border-color);
+        padding: 8px 16px 16px 16px;
+        border-radius: 8px;
+        margin: 16px 0;
+      }
+
+      .feature-card > h3 {
+        text-align: left;
+        line-height: 1.2em;
+        padding: 8px 0;
+      }
+
+      .feature-card > .description {
+        margin: 0;
+      }
+
+      .feature-card > .term {
+        text-align: right;
+        margin: 8px 0 0 0;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <h2 id="pictures"><a href="#pictures">Pictures</a></h2>
+        <p class="screenshot-picture">
+                  <img
+                    src="./assets/images/aidl/about_1.png"
+                    alt="startup_image"
+                    decoding="async"
+                  />
+                  <img
+                    src="./assets/images/aidl/about_2.png"
+                    alt="startup_image"
+                    decoding="async"
+                  />
+                  <img
+                    src="./assets/images/aidl/about_3.png"
+                    alt="startup_image"
+                    decoding="async"
+                  />
+        </p>
+    </section>
+    <section>
+      <h2 id="infrastructures"><a href="#infrastructures">Infrastructures</a></h2>
+      <figure>
+        <image src="assets/images/aidl/aidl_infra.png" width="100%" height="100%"></image>
+      </figure>
+    </section>
+    <section id="feature-section">
+      <h2 id="features"><a href="#features">Features</a></h2>
+      <div class="feature-card">
+        <h3>
+            《概要/Overview》
+        </h3>
+        <p class="description">
+          NPO団体へのサブスクリプション型支援アプリケーションサービスです。
+            <ul style="list-style: disc;">
+                <li>言語: Dart</li>
+                <li>フレームワーク: Flutter</li>
+                <li>バックエンド: Firebase</li>
+            </ul>
+        </p>
+        <p class="term">2022年6月〜現在</p>
+      </div>
+        <div class="feature-card">
+        <h3>
+            《詳細/Detail》
+        </h3>
+        <p class="description">
+            <ul style="list-style: disc;">
+                <li>アプリ内抽選機能の実装</li>
+                <li>Firebase Functionsを使用したプッシュ通知機能の実装</li>
+                <li>クラウドNoSQLデータベース実装</li>
+                <li>マイページ機能</li>
+                <li>新規登録/ログイン機能</li>
+            </ul>
+        </p>
+        </div>
+    </section>
+    
+    <section>
+      <h2 id="Skills"><a href="#Skills">Skills</a></h2>
+      <article class="skill-wrapper">
+        <div class="card-layout">
+          <div class="card skill-card">
+            <h3>Language</h3>
+            <div class="skill-links-layout">
+              <a
+                href="https://dart.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <picture>
+                  <source type="image/webp" srcset="./assets/images/dart.png" />
+                  <source type="image/png" srcset="./assets/images/dart.png" />
+                  <img
+                    src="./assets/images/dart.png"
+                    alt="Dart"
+                    decoding="async"
+                  />
+                </picture>
+              </a>
+            </div>
+            <p class="card-text">Dart</p>
+          </div>
+
+          <div class="card skill-card">
+            <h3>FrontEnd</h3>
+            <div class="skill-links-layout">
+              <a
+                href="https://flutter.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/images/flutter.png"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="./assets/images/flutter.png"
+                  />
+                  <img
+                    src="./assets/images/flutter.png"
+                    alt="Flutter"
+                    decoding="async"
+                  />
+                </picture>
+              </a>
+            </div>
+            <p class="card-text">Flutter / Flutter Web</p>
+          </div>
+        </div>
+        <div class="card-layout">
+          <div class="card skill-card">
+            <h3>BackEnd</h3>
+            <div class="skill-links-layout">
+              <a
+                href="https://firebase.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/images/firebase.png"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="./assets/images/firebase.png"
+                  />
+                  <img
+                    src="./assets/images/firebase.png"
+                    alt="Firebase"
+                    decoding="async"
+                  />
+                </picture>
+              </a>
+            </div>
+            <p class="card-text">Firebase</p>
+          </div>
+        </div>
+      </article>
+  </body>
+</html>
