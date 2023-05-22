@@ -123,7 +123,7 @@
       .screenshot-picture {
         display: flex;
         height: 384px;
-        width: calc(100%/4);
+        width: calc(100%);
         text-align: center;
         gap: 16px 16px;
       }
@@ -183,14 +183,14 @@
             《概要/Overview》
         </h3>
         <p class="description">
-          マップ内へ書き込み投稿を行い、投稿データを場所に刻むことのできるSNSサービス開発です。
+          jQuery Mobile からのリプレース案件です。<br>居宅介護支援システムと介護予防ケアマネジメントシステム機能を軸とした介護ソフトの開発です。
             <ul style="list-style: disc;">
                 <li>言語: Dart</li>
                 <li>フレームワーク: Flutter</li>
-                <li>バックエンド: Firebase</li>
+                <li>バックエンド: Apache</li>
             </ul>
         </p>
-        <p class="term">2022年6月〜2022年9月</p>
+        <p class="term">2022年11月〜2023年4月</p>
       </div>
         <div class="feature-card">
         <h3>
@@ -198,26 +198,22 @@
         </h3>
         <p class="description">
             <ul style="list-style: disc;">
-                <li>GoogleMapとのAPI連携</li>
-                <li>RevenueCatでの課金機能実装</li>
-                <li>NoSQLデータベース連携</li>
-                <li>Googleログイン機能</li>
+                <li>他フレームワークからFlutterへ移行</li>
+                <li>ページUI作成</li>
+                <li>新規登録/ログイン機能</li>
+                <li>マイページ機能</li>
+                <li>WebサーバとのAPI連携</li>
             </ul>
         </p>
         </div>
     </section>
-    
+
     <section>
         <h2 id="pictures"><a href="#pictures">Pictures</a></h2>
         <p class="screenshot-picture">
                   <img
-                    src="./assets/images/joyato/map_image.png"
-                    alt="map_image"
-                    decoding="async"
-                  />
-                  <img
-                    src="./assets/images/joyato/map_image_2.png"
-                    alt="map_image_2"
+                    src="./assets/images/kaigo/no_image.png"
+                    alt="no_image"
                     decoding="async"
                   />
         </p>
@@ -225,7 +221,7 @@
     <section>
       <h2 id="infrastructures"><a href="#infrastructures">Infrastructures</a></h2>
       <figure>
-        <image src="assets/images/joyato/joyato_infra.png" width="100%" height="100%"></image>
+        <image src="assets/images/kaigo/kaigo_infra.png" width="100%" height="100%"></image>
       </figure>
     </section>
     
@@ -287,53 +283,29 @@
           <div class="card skill-card">
             <h3>BackEnd</h3>
             <div class="skill-links-layout">
-              <div>
-                <a
+              <a
                 href="https://firebase.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-              ></a>
+              >
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="./assets/images/firebase.png"
+                    srcset="./assets/images/apache.png"
                   />
                   <source
                     type="image/png"
-                    srcset="./assets/images/firebase.png"
+                    srcset="./assets/images/apache.png"
                   />
                   <img
-                    src="./assets/images/firebase.png"
-                    alt="Firebase"
+                    src="./assets/images/apache.png"
+                    alt="Apache"
                     decoding="async"
                   />
                 </picture>
-                <p class="card-text">Firebase</p>
-              </div>
-              <div>
-                <a
-                href="https://cloud.google.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              ></a>
-                <picture>
-                  <source
-                    type="image/webp"
-                    srcset="./assets/images/gcp.png"
-                  />
-                  <source
-                    type="image/png"
-                    srcset="./assets/images/gcp.png"
-                  />
-                  <img
-                    src="./assets/images/gcp.png"
-                    alt="Gcp"
-                    decoding="async"
-                  />
-                </picture>
-                <p class="card-text">GCP</p>
-              </div>
+              </a>
             </div>
+            <p class="card-text">Apache</p>
           </div>
         </div>
       </article>
